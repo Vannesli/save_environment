@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapor</title>
+    <link rel="stylesheet" href="stylelapor.css">
+</head>
+<body>
+    <div class="container-lapor">
+        <form>
+            <h1> Buat Laporan Baru </h1>
+            <h3> Detail </h3>
+            <div class="email-pelapor">
+                <label for="email-pelapor">Email Pelapor</label>
+                <input type="email" id="box-email">
+            </div>
+
+            <div class="nama-pelapor">
+                <label for="nama-pelapor">Nama Pelapor</label>
+                <input type="text" id="box-nama">
+            </div>
+
+            <div class="nohp-pelapor">
+                <label for="nohp-pelapor">NoHp Pelapor</label>
+                <input type="number" id="box-nohp">
+            </div>
+
+            <div class="lokasi-kejadian">
+                <label for="lokasi-kejadian">Lokasi Kejadian</label>
+                <textarea name="isilokasi" id="isilokasi"></textarea>
+            </div>
+
+            <div class="jenis-kejadian">
+                <label for="jenis-kejadian">Jenis Kejadian</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Choose One</option>
+                    <option value="1">Perusakan / Rusaknya fasilitas Umum</option>
+                    <option value="2">Pencemaran Sampah</option>
+                    <option value="3">Perusakan Tanaman / Lingkungan</option>
+                </select>
+            </div>
+
+            <div class="deskripsi-kejadian">
+                <label for="deskripsi-kejadian">Deskripsi Kejadian</label>
+                <textarea name="isikejadian" id="isikejadian"></textarea>
+            </div>
+
+            <div class="input-bukti">
+                <label for="input-bukti">Upload Bukti</label>
+                <input type="file" value="upload-bukti" id="inputbukti">
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" id="kotakcheck">
+                <label for="checkbox">Dengan ini saya menyatakan kejujuran dan memberikan bukti yang benar adanya tanpa adanya unsur fitnah/asumsi pribadi terhadap individu</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Lapor */
+h1{
+    margin-top: 20px;
+}
+.container-lapor{
+    background-color: white;
+    border-radius: 20px;
+    width: 1000px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.email-pelapor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.nama-pelapor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.nohp-pelapor{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.lokasi-kejadian{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.deskripsi-kejadian{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-bukti{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#inputbukti{
+    width: 100px;
+}
+#box-email{
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+#box-nama{
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+#box-nohp{
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+#isilokasi{
+    width: 910px;
+    height: 150px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.jenis-kejadian{
+    margin-top: 20px;
+}
+#isikejadian{
+    width: 910px;
+    height: 150px;
+    border-color: transparent;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.form-select{
+    width: 810px;
+    height: 40px;
+    padding-left: 20px;
+    border-color: transparent;
+    background-color: whitesmoke;
+}
+.btn-submit{
+    width: 910px;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    margin-bottom: 40px;
+}
