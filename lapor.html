@@ -6,35 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapor</title>
     <link rel="stylesheet" href="stylelapor.css">
+    <script src="lapor.js"></script>
 </head>
 <body>
+
     <div class="container-lapor">
-        <form>
-            <h1> Buat Laporan Baru </h1>
+        <div class="banner-lapor">
+            <h1> SAVI LAPOR </h1>
+        </div>
+        <form name="form-lapor" onsubmit="return validateForm()">
+            <h2> Buat Laporan Baru </h2>
             <h3> Detail </h3>
             <div class="email-pelapor">
                 <label for="email-pelapor">Email Pelapor</label>
-                <input type="email" id="box-email">
+                <input type="email" name="email-pelapor" id="box-email">
             </div>
 
             <div class="nama-pelapor">
                 <label for="nama-pelapor">Nama Pelapor</label>
-                <input type="text" id="box-nama">
+                <input type="text" name="nama-pelapor" id="box-nama">
             </div>
 
             <div class="nohp-pelapor">
                 <label for="nohp-pelapor">NoHp Pelapor</label>
-                <input type="number" id="box-nohp">
+                <input type="number" name="nohp-pelapor" id="box-nohp">
             </div>
 
             <div class="lokasi-kejadian">
                 <label for="lokasi-kejadian">Lokasi Kejadian</label>
-                <textarea name="isilokasi" id="isilokasi"></textarea>
+                <textarea name="isilokasi" name="isilokasi" id="isilokasi" ></textarea>
             </div>
 
             <div class="jenis-kejadian">
                 <label for="jenis-kejadian">Jenis Kejadian</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" name="jenis-kejadian">
                     <option selected>Choose One</option>
                     <option value="1">Perusakan / Rusaknya fasilitas Umum</option>
                     <option value="2">Pencemaran Sampah</option>
@@ -44,16 +49,16 @@
 
             <div class="deskripsi-kejadian">
                 <label for="deskripsi-kejadian">Deskripsi Kejadian</label>
-                <textarea name="isikejadian" id="isikejadian"></textarea>
+                <textarea name="isikejadian" name="isikejadian" id="isikejadian"></textarea>
             </div>
 
             <div class="input-bukti">
                 <label for="input-bukti">Upload Bukti</label>
-                <input type="file" value="upload-bukti" id="inputbukti">
+                <input type="file" value="upload-bukti" name="inputbukti" id="inputbukti">
             </div>
             
             <div class="checkbox">
-                <input type="checkbox" id="kotakcheck">
+                <input type="checkbox" name="kotakcheck" id="kotakcheck" required>
                 <label for="checkbox">Dengan ini saya menyatakan kejujuran dan memberikan bukti yang benar adanya tanpa adanya unsur fitnah/asumsi pribadi terhadap individu</label>
             </div>
 

@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: grey;
+    background-color: #A4907C;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+:root{
+    --main-color: #98D8AA;
+    --second-color: #A4907C;
 }
 
 /* Form Lapor */
@@ -16,13 +29,15 @@ h1{
 }
 .container-lapor{
     background-color: white;
-    border-radius: 20px;
-    width: 1000px;
+    border-radius: 10px;
+    width: 900px;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 200px;
+    padding-left: 10px;
 }
 .email-pelapor{
     display: flex;
@@ -54,6 +69,8 @@ h1{
     flex-direction: row;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 800px;
+    
 }
 
 .input-bukti{
@@ -66,57 +83,71 @@ h1{
 }
 #box-email{
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: transparent;
     background-color: whitesmoke;
     margin-top: 10px;
+    width: 800px;
+    padding-left: 10px;
 }
 #box-nama{
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: transparent;
     background-color: whitesmoke;
     margin-top: 10px;
+    width: 800px;
+    padding-left: 10px;
+
 }
 #box-nohp{
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: transparent;
     background-color: whitesmoke;
     margin-top: 10px;
+    width: 800px;
+    padding-left: 10px;
 }
 #isilokasi{
-    width: 910px;
+    width: 800px;
     height: 150px;
     border-color: transparent;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 8px;
     text-decoration: none;
     margin-top: 10px;
+    padding-left: 10px;
+    padding-top:10px;
 }
 .jenis-kejadian{
     margin-top: 20px;
 }
 #isikejadian{
-    width: 910px;
+    width: 800px;
     height: 150px;
     border-color: transparent;
     background-color: whitesmoke;
-    border-radius: 20px;
+    border-radius: 8px;
     text-decoration: none;
     margin-top: 10px;
+    
+}
+#kotakcheck{
+    margin-right: 20px;
+    width: 30px;
 }
 .form-select{
-    width: 810px;
+    width: 680px;
     height: 40px;
     padding-left: 20px;
     border-color: transparent;
     background-color: whitesmoke;
 }
 .btn-submit{
-    width: 910px;
+    width: 800px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     border-color: transparent;
     background-color: green;
     color: white;
