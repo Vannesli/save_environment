@@ -11,7 +11,7 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: #A4907C;
+    background-color: #A4907C !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +21,10 @@ body{
 :root{
     --main-color: #98D8AA;
     --second-color: #A4907C;
+}
+
+nav{
+    width: 100% !important;
 }
 
 /* Form Lapor */
