@@ -6,54 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapor</title>
     <link rel="stylesheet" href="stylelapor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="lapor.js"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="lapor.html">Lapor</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Edukasi
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="edukasi_sampah.html">Edukasi Sampah</a></li>
-                <li><a class="dropdown-item" href="edukasi_fasilitasumum.html">Edukasi Fasilitas Umum</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="edukasi_lingkungan.html">Edukasi Lingkungan</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
+    <nav>
+      <a href="index.html" class="logo"><img src="assets/sv (1).png" alt="logo"></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+          <li><a href="index.html">Kembali</a></li>
+      </ul>
     </nav>
   <!-- End Navbar -->
+
     <div class="allcontainer">
+        <div class="marquee">
+            <marquee>STOP MERUSAK LINGKUNGAN! AYO TANAM TUMBUHAN DISEKITAR ANDA! KURANGI SAMPAH PLASTIK! GUNAKAN MASKER UNTUK MEMBERHENTIKAN PENYEBARAN VIRUS PENYAKIT</marquee>
+        </div>
+      <div class="banner-lapor">
+        <span class="text-lapor"> BANTU KAMI MENINDAKLANJUTI OKNUM PERUSAKAN LINGKUNGAN DEMI MENJAGA LINGKUNGAN KITA! </span>
+      </div>
+      <div class="big-container-lapor">
         <div class="container-lapor">
-            <div class="banner-lapor">
-                <h1> SAVI LAPOR </h1>
-            </div>
             <form name="form-lapor" onsubmit="return validateForm()">
                 <h2> Buat Laporan Baru </h2>
-                <h3> Detail </h3>
+                <h5> Silahkan isi data berikut </h3>
                 <div class="email-pelapor">
                     <label for="email-pelapor">Email Pelapor</label>
                     <input type="email" name="email-pelapor" id="box-email">
@@ -99,10 +80,38 @@
                     <label for="checkbox">Dengan ini saya menyatakan kejujuran dan memberikan bukti yang benar adanya tanpa adanya unsur fitnah/asumsi pribadi terhadap individu</label>
                 </div>
     
-                <button type="submit" class="btn-submit">Submit</button>
+                <button type="submit" class="btn-submit" onclick="notifikasi()">Submit</button>
             </form>
         </div>
+        <div class="kotak-ulasan">
+            <div class="ulasan" id="ulasan">
+                <div class="person" id="person">
+
+                </div>
+                <div class="komen">
+                    Comment: 
+                    <div class="isikomen" id="isikomen">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+        </div>
+        <div class="links">
+            <a href="">Privacy Policy</a>
+            <a href="">Term Of Use</a>
+            <a href="">Our Company</a>
+        </div>
+        <p>&#169; SAVI All Right Reserved</p>
+    </section>
 </body>
 </html>

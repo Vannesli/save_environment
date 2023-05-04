@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+:root{
+    --main-color: #008148;
+    --second-color: #1e3932;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 0px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    display: flex;
+    padding-top: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 24px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1150px){
+    nav{
+        padding: 18px 7%;
+    }
+}
+@media(max-width:991px){
+    nav{
+        padding: 18px 4%;
+    }
+}
+@media(max-width:768px){
+    nav{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    nav .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .navbar.active {
+        top: 100%;
+    }
+}
+

@@ -11,7 +11,7 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: #A4907C !important;
+    background-color: #fff !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,20 +19,163 @@ body{
 }
 
 :root{
-    --main-color: #98D8AA;
-    --second-color: #A4907C;
+    --main-color: #008148;
+    --second-color: #1e3932;
 }
 
 nav{
-    width: 100% !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 0px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    display: flex;
+    padding-top: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 24px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1150px){
+    nav{
+        padding: 18px 7%;
+    }
+}
+@media(max-width:991px){
+    nav{
+        padding: 18px 4%;
+    }
+}
+@media(max-width:768px){
+    nav{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    nav .navbar{
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .navbar.active {
+        top: 100%;
+    }
 }
 
-/* Form Lapor */
-h1{
-    margin-top: 20px;
+.allcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.container-lapor{
+/* Marquee */
+.marquee{
+    margin-top:66px;
+    background-color: green;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+marquee{
+    font-weight: bold;
+}
+/* Banner lapor */
+.banner-lapor{
+    background-color: #D4FAFC;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+/* Form Lapor */
+.text-lapor{
+    font-weight: bold;
+}
+.big-container-lapor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: white;
+    width: 100vw;
+    height: fit-content;
+}
+.kotak-ulasan{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 118vh;
+    width: 500px;
+    align-items: center;
+}
+.ulasan{
+    width: 350px;
+    height: fit-content;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.person{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-lapor{
+    background-color: whitesmoke;
     border-radius: 10px;
     width: 900px;
     height: fit-content;
@@ -40,13 +183,15 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 50px;
     padding-left: 10px;
 }
 .email-pelapor{
     display: flex;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 .nama-pelapor{
     display: flex;
@@ -76,6 +221,17 @@ h1{
     width: 800px;
     
 }
+.file{
+    width: 200px;
+}
+#inputbukti{
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px !important;
+    height: 50px;
+}
 
 .input-bukti{
     display: flex;
@@ -89,7 +245,7 @@ h1{
     height: 40px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
     margin-top: 10px;
     width: 800px;
     padding-left: 10px;
@@ -98,7 +254,7 @@ h1{
     height: 40px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
     margin-top: 10px;
     width: 800px;
     padding-left: 10px;
@@ -108,7 +264,7 @@ h1{
     height: 40px;
     border-radius: 8px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
     margin-top: 10px;
     width: 800px;
     padding-left: 10px;
@@ -117,7 +273,7 @@ h1{
     width: 800px;
     height: 150px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 8px;
     text-decoration: none;
     margin-top: 10px;
@@ -131,7 +287,7 @@ h1{
     width: 800px;
     height: 150px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 8px;
     text-decoration: none;
     margin-top: 10px;
@@ -146,7 +302,7 @@ h1{
     height: 40px;
     padding-left: 20px;
     border-color: transparent;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .btn-submit{
     width: 800px;
@@ -156,4 +312,43 @@ h1{
     background-color: green;
     color: white;
     margin-bottom: 40px;
+}
+
+/* Footer */
+
+/* contact */
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.social a{
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx{
+    padding: 5px;
+    color: #fff;
+    background:#000000;
+    border-radius: 50%;
+}
+.social a .bx:hover{
+    background: var(--main-color);
+}
+.links{
+    margin: 1rem 0 1rem;
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--second-color);
+    padding: 1rem;
+}
+.links a:hover{
+    color: var(--main-color);
+}
+.contact p {
+    text-align: center;
 }

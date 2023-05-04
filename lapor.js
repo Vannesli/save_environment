@@ -41,4 +41,26 @@ function validateForm() {
         document.forms["form-lapor"]["inputbukti"].focus();
         return false;
     }
+    else {
+        alert("Terima kasih Laporan anda terekam! Laporan anda akan segera kami tindak lanjuti")
+    }
 }
+
+var url = 'https://64512af1e1f6f1bb22a9f2c1.mockapi.io/savi/artikel'
+fetch(url)
+.then(res => {
+    return res.json();
+})
+.then(data => {
+    data.forEach(artikel => {
+        const nama = `<li>${artikel.nama}></li>`;
+        const avatar = `<img src=${artikel.avatar} width="50px" height="50px"></img>`;
+        const komen = `<li>${artikel.komen}></li>`;
+
+        document.querySelector('#person').insertAdjacentHTML('beforeend',avatar);
+        document.querySelector('#person').insertAdjacentHTML('beforeend',nama);
+        document.querySelector('#isikomen').insertAdjacentHTML('beforeend',komen);
+    });
+})
+
+.catch(error => console.log(error));
