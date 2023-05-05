@@ -13,7 +13,7 @@
 
 }
 :root{
-    --main-color: #008148;
+    --main-color: #115F2E;
     --second-color: #1e3932;
 }
 section{
@@ -180,7 +180,7 @@ nav{
 
 }
 .acara-container .box span{
-    color: #ebdbc7;
+    color: #ebdbc8;
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0.2rem 0 0.5rem;
@@ -397,7 +397,7 @@ nav{
 }
 
 .box-tanam{
-    background-color: ;
+    /* background-color: ; */
     width: 700px;
     object-fit: cover;
     border-radius: 20px;
