@@ -354,7 +354,8 @@ marquee {
     font-size: 16px;
   }
   .text-lapor {
-    font-size: 14px;
+    text-align: center;
+    font-size: 12px;
   }
 }
 
@@ -364,6 +365,173 @@ marquee {
     font-size: 20px;
   }
   .text-lapor {
+    text-align: center;
     font-size: 12px;
+  }
+}
+
+/* style form responsive */
+@media screen and (max-width: 767px) {
+  .container-lapor {
+    width: 390px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* jenis kejadian */
+  .email-pelapor,
+  .nama-pelapor,
+  .nohp-pelapor,
+  .lokasi-kejadian,
+  .jenis-kejadian,
+  .deskripsi-kejadian,
+  .input-bukti,
+  .checkbox,
+  .btn-submit {
+    /* flex-direction: row; */
+    display: block;
+    align-items: center;
+    width: 320px;
+    margin-left: 9px;
+  }
+
+  .jenis-kejadian label {
+    flex-basis: 20%;
+    margin-right: 20px;
+  }
+
+  .jenis-kejadian select {
+    flex-basis: 80%;
+  }
+  /* email */
+  /* .email-pelapor,
+  .nama-pelapor,
+  .nohp-pelapor,
+  .lokasi-kejadian,
+  .jenis-kejadian,
+  .deskripsi-kejadian,
+  .input-bukti,
+  .checkbox {
+    margin-bottom: 10px;
+    display: block;
+    align-items: center;
+    width: 320px;
+    margin-left: 60px;
+  } */
+  .email-pelapor,
+  .nama-pelapor,
+  .nohp-pelapor label {
+    display: block;
+    /* margin-bottom: 5px; */
+  }
+  .email-pelapor #box-email {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .nama-pelapor #box-nama {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .nohp-pelapor #box-nohp {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .lokasi-kejadian label {
+    flex-basis: 20%;
+    margin-right: 20px;
+  }
+  .lokasi-kejadian #isilokasi {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .deskripsi-kejadian label {
+    flex-basis: 20%;
+    margin-right: 20px;
+  }
+  .deskripsi-kejadian #isikejadian {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .input-bukti {
+    display: block;
+  }
+  .input-bukti label {
+    margin-bottom: 10px;
+  }
+  .input-bukti input[type="file"] {
+    margin-bottom: 20px;
+  }
+
+  .checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 10px;
+  }
+
+  /* button {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px 12px;
+    width: 50vw;
+    margin-left: 36px;
+  } */
+  /* .btn-submit {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    width: 400px;
+    align-items: center;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .kotak-ulasan {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ulasan {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .person {
+    display: none;
+  }
+
+  .komen {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
