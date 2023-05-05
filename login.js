@@ -15,8 +15,3 @@ signupLink.onclick = () => {
   signupBtn.click();
   return false;
 };
-
-signupLink.addEventListener("click", () => {
-  signupForm.classList.remove("active");
-  loginForm.classList.add("active");
-});
