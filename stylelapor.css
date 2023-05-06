@@ -228,6 +228,7 @@ marquee {
   justify-content: center;
   width: 300px !important;
   height: 50px;
+
 }
 
 .input-bukti {
@@ -402,6 +403,7 @@ marquee {
     padding: 10px;
   }
 
+
   h2 {
     font-size: 24px;
     text-align: center;
@@ -501,6 +503,7 @@ marquee {
     align-items: flex-start;
     font-size: 10px;
   }
+
   .big-container-lapor{
     display: flex;
     flex-direction: column;
@@ -510,3 +513,4 @@ marquee {
 @media screen and (max-width: 768px) {
   
 }
+
