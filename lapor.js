@@ -46,6 +46,8 @@ function validateForm() {
     }
 }
 
+
+
 var url = 'https://64512af1e1f6f1bb22a9f2c1.mockapi.io/savi/artikel'
 fetch(url)
 .then(res => {
