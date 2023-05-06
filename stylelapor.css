@@ -376,7 +376,7 @@ marquee {
     flex-direction: column;
   } */
   .container-lapor {
-    width: 390px;
+    width: 350px;
     padding: 10px;
   }
 
@@ -404,8 +404,8 @@ marquee {
     /* flex-direction: row; */
     display: block;
     align-items: center;
-    width: 320px;
-    margin-left: 9px;
+    width: 300px;
+    margin-left: 2px;
   }
 
   .jenis-kejadian label {
@@ -415,6 +415,7 @@ marquee {
 
   .jenis-kejadian select {
     flex-basis: 80%;
+    width: 300px;
   }
   .email-pelapor,
   .nama-pelapor,
@@ -482,28 +483,53 @@ marquee {
 }
 
 @media screen and (max-width: 768px) {
-  .kotak-ulasan {
-    display: none;
+  .big-container-lapor {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+  .kotak-ulasan {
+    width: 120px;
+    margin-top: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: left;
+    margin-right: 50px;
   }
 
   .ulasan {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
+    /* width: 100%; */
     text-align: center;
+    align-items: center;
   }
 
-  .person {
+  /* .person {
     display: none;
-  }
+  } */
 
   .komen {
     font-size: 14px;
-    margin-bottom: 10px;
   }
+}
+
+/* notifikasi */
+
+.selesai {
+  width: 800px;
+  height: 50px;
+  padding: 10px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+#selesai {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 800px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
