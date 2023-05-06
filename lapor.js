@@ -43,8 +43,12 @@ function validateForm() {
     }
     else {
         alert("Terima kasih Laporan anda terekam! Laporan anda akan segera kami tindak lanjuti")
+        window.location.href = "notifikasi.html";
+        return false;
     }
 }
+
+
 
 var url = 'https://64512af1e1f6f1bb22a9f2c1.mockapi.io/savi/artikel'
 fetch(url)
