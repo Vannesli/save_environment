@@ -144,7 +144,6 @@ marquee {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: white;
   width: 100vw;
   height: fit-content;
 }
@@ -348,6 +347,29 @@ marquee {
   text-align: center;
 }
 
+
+.selesai {
+  width: 800px;
+  height: 50px;
+  padding: 10px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+#selesai {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 800px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
 /* Style untuk layar dengan lebar kurang dari 600px */
 @media only screen and (max-width: 600px) {
   .marquee {
@@ -479,31 +501,12 @@ marquee {
     align-items: flex-start;
     font-size: 10px;
   }
+  .big-container-lapor{
+    display: flex;
+    flex-direction: column;
+  
 }
 
 @media screen and (max-width: 768px) {
-  .kotak-ulasan {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ulasan {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .person {
-    display: none;
-  }
-
-  .komen {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
+  
 }
