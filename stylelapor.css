@@ -498,11 +498,12 @@ marquee {
   .ulasan {
     /* width: 100%; */
     text-align: center;
+    align-items: center;
   }
 
-  .person {
+  /* .person {
     display: none;
-  }
+  } */
 
   .komen {
     font-size: 14px;
